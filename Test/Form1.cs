@@ -26,7 +26,8 @@ namespace Test
             DragonName = txtDragon.Text;
 
             rtbOut.Text = "Player Name: " + playerName + 
-                "\nDragon Name: " + DragonName;
+                "\nDragon Name: " + DragonName; //added a comment from github
+                
         }
     }
 }

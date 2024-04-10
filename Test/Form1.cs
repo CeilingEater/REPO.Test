@@ -12,9 +12,21 @@ namespace Test
 {
     public partial class frmDragon : Form
     {
+        string playerName;
+        string DragonName;
+
         public frmDragon()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            playerName = txtPlayerName.Text;
+            DragonName = txtDragon.Text;
+
+            rtbOut.Text = "Player Name: " + playerName + 
+                "\nDragon Name: " + DragonName;
         }
     }
 }

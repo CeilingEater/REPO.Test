@@ -31,7 +31,7 @@ namespace Test
                     "\nDragon Name: " + DragonName; //added a comment from github
             }
             else
-                rtbOut.Text = "Enter something you dipshit";
+                rtbOut.Text = "Enter something you dipshit"; //branch history>right click>revert
             //tadpole
                 
         }

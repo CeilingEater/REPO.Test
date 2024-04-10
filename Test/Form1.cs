@@ -22,12 +22,16 @@ namespace Test
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            playerName = txtPlayerName.Text;
-            DragonName = txtDragon.Text;
+            if (txtPlayerName.Text != "" && txtDragon.Text != "")
+            {
+                playerName = txtPlayerName.Text;
+                DragonName = txtDragon.Text;
 
-            rtbOut.Text = "Player Name: " + playerName + 
-                "\nDragon Name: " + DragonName; //added a comment from github
-
+                rtbOut.Text = "Player Name: " + playerName +
+                    "\nDragon Name: " + DragonName; //added a comment from github
+            }
+            else
+                rtbOut.Text = "Enter something you dipshit";
             //tadpole
                 
         }
